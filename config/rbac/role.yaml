@@ -21,6 +21,12 @@ rules:
 - apiGroups:
   - webapp.my.domain
   resources:
+  - guestbooks/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - webapp.my.domain
+  resources:
   - guestbooks/status
   verbs:
   - get
